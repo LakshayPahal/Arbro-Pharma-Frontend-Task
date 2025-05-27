@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SMPL001",
+    "sampleName": "Blood Test Alpha",
+    "sampleType": "Blood",
+    "collectedOn": "2024-05-20",
+    "status": "Pending",
+    "description": "Routine check-up sample."
+  },
+  {
+    "id": "SMPL002",
+    "sampleName": "Urine Analysis Beta",
+    "sampleType": "Urine",
+    "collectedOn": "2024-05-22",
+    "status": "Processing",
+    "description": "Urgent analysis required."
+  },
+  {
+    "id": "SMPL003",
+    "sampleName": "Tissue Biopsy Gamma",
+    "sampleType": "Tissue",
+    "collectedOn": "2024-05-18",
+    "status": "Completed",
+    "description": "Follow-up biopsy."
+  },
+  {
+    "id": "SMPL004",
+    "sampleName": "Saliva Swab Delta",
+    "sampleType": "Saliva",
+    "collectedOn": "2024-05-25",
+    "status": "Pending",
+    "description": ""
+  },
+  {
+    "id": "SMPL005",
+    "sampleName": "Blood Test Epsilon",
+    "sampleType": "Blood",
+    "collectedOn": "2024-05-15",
+    "status": "Completed",
+    "description": "Allergy panel test."
+  }
+]
