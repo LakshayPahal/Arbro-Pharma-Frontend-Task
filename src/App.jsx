@@ -1,12 +1,17 @@
 // src/App.jsx
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useMemo, useContext } from 'react';
 import {
   Container,
   Typography,
   Box,
   IconButton,
   AppBar,
-  Toolbar
+  Toolbar,
+  TextField,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel
 } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -18,18 +23,41 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import mockSamplesData from './data/mockSamples.json';
 import SampleTable from './components/SampleTable.jsx';
 
+const statusFilterOptions = ["All", "Pending", "Processing", "Completed"];
+
 function App() {
   const themeMode = useContext(ThemeModeContext);
   const mode = themeMode ? themeMode.mode : 'light';
   const toggleThemeMode = themeMode ? themeMode.toggleThemeMode : () => {};
 
-  const [samples, setSamples] = useState([]);
+  const [allSamples, setAllSamples] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const [searchTerm, setSearchTerm] = useState('');
+  const [statusFilter, setStatusFilter] = useState('All');
+
   useEffect(() => {
-    setSamples(mockSamplesData);
+    setAllSamples(mockSamplesData);
     setLoading(false);
   }, []);
+
+  const filteredSamples = useMemo(() => {
+    let samplesToShow = allSamples;
+
+    if (searchTerm.trim()) {
+      samplesToShow = samplesToShow.filter(sample =>
+        sample.sampleName.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    if (statusFilter !== 'All') {
+      samplesToShow = samplesToShow.filter(sample =>
+        sample.status === statusFilter
+      );
+    }
+
+    return samplesToShow;
+  }, [allSamples, searchTerm, statusFilter]);
 
   if (loading) {
     return (
@@ -56,10 +84,44 @@ function App() {
       </AppBar>
 
       <Container maxWidth="lg" sx={{ mt: 3 }}>
-        <Typography variant="h5" component="h1" gutterBottom sx={{ textAlign: 'center' }}>
+        <Typography variant="h5" component="h1" gutterBottom sx={{ textAlign: 'center', mb: 2 }}>
           Samples Overview
         </Typography>
-        <SampleTable samples={samples} />
+
+        <Box sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          gap: 2,
+          mb: 2,
+          alignItems: 'center'
+        }}>
+          <TextField
+            fullWidth={true}
+            sx={{ flexGrow: {sm: 1} }}
+            label="Search by Sample Name"
+            variant="outlined"
+            size="small"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <FormControl variant="outlined" size="small" sx={{ minWidth: {xs: '100%', sm: 200} }}>
+            <InputLabel id="status-filter-label">Filter by Status</InputLabel>
+            <Select
+              labelId="status-filter-label"
+              value={statusFilter}
+              label="Filter by Status"
+              onChange={(e) => setStatusFilter(e.target.value)}
+            >
+              {statusFilterOptions.map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
+
+        <SampleTable samples={filteredSamples} />
       </Container>
     </LocalizationProvider>
   );
