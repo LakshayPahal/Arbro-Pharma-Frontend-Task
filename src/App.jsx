@@ -7,10 +7,10 @@ import { ThemeModeContext } from './contexts/ThemeModeContext.jsx';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 
-
 function App() {
   const themeMode = useContext(ThemeModeContext);
-  const mode = themeMode ? themeMode.mode : 'light';
+  // Default to 'light' if context is not immediately available during first paint
+  const mode = themeMode ? themeMode.mode : 'light'; 
   const toggleThemeMode = themeMode ? themeMode.toggleThemeMode : () => {};
 
   return (

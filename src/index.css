@@ -18,17 +18,4 @@ body {
   flex-grow: 1;
 }
 
-/* Custom Scrollbars */
-* {
-  scrollbar-width: thin;
-}
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-*::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-*::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-}
+/* Custom Scrollbars are styled via ThemeModeContext.jsx's MuiCssBaseline override */
