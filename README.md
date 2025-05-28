@@ -3,7 +3,7 @@
 A modern, responsive laboratory sample management system built with React and Material UI. This dashboard provides an intuitive interface for managing laboratory samples with features like real-time search, filtering, sorting, and dark/light mode support.
 
 ## 🎥 Video Demonstration
-[Add your video demonstration link here]
+[Watch the demo video here](https://youtu.be/AcMYfUaXNuc)
 
 ## 🌐 Live Demo
 Here is the live Deployment link of the project:
