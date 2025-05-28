@@ -55,10 +55,10 @@ https://arbro-task-lakshaypahal.netlify.app/
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone [your-repo-url]
-   ```
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/LakshayPahal/Arbro-Pharma-Frontend-Task.git](https://github.com/LakshayPahal/Arbro-Pharma-Frontend-Task.git)
+    ```
 
 2. **Install dependencies**
    ```bash
