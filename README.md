@@ -1,12 +1,93 @@
-# React + Vite
+# Sample Management Dashboard - YLIMS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive laboratory sample management system built with React and Material UI. This dashboard provides an intuitive interface for managing laboratory samples with features like real-time search, filtering, sorting, and dark/light mode support.
 
-Currently, two official plugins are available:
+## 🎥 Video Demonstration
+[Add your video demonstration link here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+[Add your deployment link here]
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
+[Add your screenshots here]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **Comprehensive Sample Management**
+  - Add, edit, and track laboratory samples
+  - Real-time search and filtering
+  - Sortable columns
+  - Pagination support
+  - Status tracking with visual indicators
+
+- **Modern UI/UX**
+  - Clean, intuitive interface
+  - Dark/Light mode support
+  - Responsive design for all devices
+  - Material Design components
+  - Smooth animations and transitions
+
+- **Advanced Functionality**
+  - Client-side data management
+  - Form validation
+  - Date handling with date-fns
+  - Optimistic UI updates
+  - Custom status badges
+
+## 🛠️ Technology Stack
+
+- React 19
+- Material UI v7
+- Vite
+- date-fns
+- ESLint
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone [your-repo-url]
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── SampleForm.jsx
+│   ├── SampleTable.jsx
+│   └── StatusBadge.jsx
+├── contexts/
+│   └── ThemeModeContext.jsx
+├── data/
+│   └── mockSamples.json
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 🔧 Development
+
+- **Code Style**: ESLint configuration included
+- **State Management**: React Hooks
+- **Styling**: Material UI with custom theme
+- **Date Handling**: date-fns for consistent date formatting
+
+## 👤 Author
+
+[Lakshay]

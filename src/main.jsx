@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import './index.css';
+import './index.css'; // Your global styles (can be empty if MUI handles all)
 import { ThemeModeProvider } from './contexts/ThemeModeContext.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -5,7 +5,7 @@
     "sampleType": "Blood",
     "collectedOn": "2024-05-20",
     "status": "Pending",
-    "description": "Routine check-up sample."
+    "description": "Routine check-up sample for patient ID P078."
   },
   {
     "id": "SMPL002",
@@ -21,7 +21,7 @@
     "sampleType": "Tissue",
     "collectedOn": "2024-05-18",
     "status": "Completed",
-    "description": "Follow-up biopsy."
+    "description": "Follow-up biopsy from surgery."
   },
   {
     "id": "SMPL004",
@@ -29,7 +29,7 @@
     "sampleType": "Saliva",
     "collectedOn": "2024-05-25",
     "status": "Pending",
-    "description": ""
+    "description": "Genetic marker test."
   },
   {
     "id": "SMPL005",
@@ -37,6 +37,6 @@
     "sampleType": "Blood",
     "collectedOn": "2024-05-15",
     "status": "Completed",
-    "description": "Allergy panel test."
+    "description": "Allergy panel."
   }
 ]
