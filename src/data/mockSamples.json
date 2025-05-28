@@ -3,7 +3,7 @@
     "id": "SMPL001",
     "sampleName": "Blood Test Alpha",
     "sampleType": "Blood",
-    "collectedOn": "2024-05-20",
+    "collectedOn": "2025-05-20",
     "status": "Pending",
     "description": "Routine check-up sample for patient ID P078."
   },
@@ -11,7 +11,7 @@
     "id": "SMPL002",
     "sampleName": "Urine Analysis Beta",
     "sampleType": "Urine",
-    "collectedOn": "2024-05-22",
+    "collectedOn": "2025-05-22",
     "status": "Processing",
     "description": "Urgent analysis required."
   },
@@ -19,7 +19,7 @@
     "id": "SMPL003",
     "sampleName": "Tissue Biopsy Gamma",
     "sampleType": "Tissue",
-    "collectedOn": "2024-05-18",
+    "collectedOn": "2025-05-25",
     "status": "Completed",
     "description": "Follow-up biopsy from surgery."
   },
@@ -27,7 +27,7 @@
     "id": "SMPL004",
     "sampleName": "Saliva Swab Delta",
     "sampleType": "Saliva",
-    "collectedOn": "2024-05-25",
+    "collectedOn": "2025-05-23",
     "status": "Pending",
     "description": "Genetic marker test."
   },
@@ -35,7 +35,7 @@
     "id": "SMPL005",
     "sampleName": "Blood Test Epsilon",
     "sampleType": "Blood",
-    "collectedOn": "2024-05-15",
+    "collectedOn": "2025-05-15",
     "status": "Completed",
     "description": "Allergy panel."
   }
