@@ -6,7 +6,8 @@ A modern, responsive laboratory sample management system built with React and Ma
 [Add your video demonstration link here]
 
 ## 🌐 Live Demo
-[Add your deployment link here]
+Here is the live Deployment link of the project:
+https://arbro-task-lakshaypahal.netlify.app/
 
 ## 📸 Screenshots
 [Add your screenshots here]
@@ -90,4 +91,4 @@ src/
 
 ## 👤 Author
 
-[Lakshay]
+Lakshay
