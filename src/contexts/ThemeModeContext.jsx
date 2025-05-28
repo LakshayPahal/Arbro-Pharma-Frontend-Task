@@ -106,11 +106,11 @@ const getDesignTokens = (mode) => ({
         root: {
           padding: '8px 20px',
         },
-        containedPrimary : ({theme}) => (
-            theme.palette.mode === 'dark' ? { color: theme.palette.getContrastText(theme.palette.primary.main) } : {}
+        containedPrimary: ({theme}) => (
+          theme.palette.mode === 'dark' ? { color: theme.palette.getContrastText(theme.palette.primary.main) } : {}
         ),
-        containedSecondary : ({theme}) => (
-            theme.palette.mode === 'dark' ? { color: theme.palette.getContrastText(theme.palette.secondary.main) } : {}
+        containedSecondary: ({theme}) => (
+          theme.palette.mode === 'dark' ? { color: theme.palette.getContrastText(theme.palette.secondary.main) } : {}
         )
       }
     },
@@ -121,10 +121,10 @@ const getDesignTokens = (mode) => ({
       },
     },
     MuiFormControl: {
-        defaultProps: {
-            variant: 'outlined',
-            size: 'small',
-        }
+      defaultProps: {
+        variant: 'outlined',
+        size: 'small',
+      }
     },
     MuiTableCell: {
       styleOverrides: {
@@ -143,43 +143,43 @@ const getDesignTokens = (mode) => ({
       },
     },
     MuiInputLabel: {
-        styleOverrides: {
-            root: ({ theme }) => ({
-                ...(theme.palette.mode === 'dark' && {
-                    // color: theme.palette.text.secondary, // Handled by theme text colors
-                }),
-            }),
-        }
+      styleOverrides: {
+        root: ({ theme }) => ({
+          ...(theme.palette.mode === 'dark' && {
+            color: theme.palette.text.secondary,
+          }),
+        }),
+      }
     },
     MuiOutlinedInput: {
-        styleOverrides: {
-            root: ({theme}) => ({
-                ...(theme.palette.mode === 'dark' && {
-                    '& .MuiOutlinedInput-notchedOutline': {
-                        borderColor: grey[700],
-                    },
-                    '&:hover .MuiOutlinedInput-notchedOutline': {
-                        borderColor: grey[500],
-                    },
-                })
-            })
-        }
+      styleOverrides: {
+        root: ({theme}) => ({
+          ...(theme.palette.mode === 'dark' && {
+            '& .MuiOutlinedInput-notchedOutline': {
+              borderColor: grey[700],
+            },
+            '&:hover .MuiOutlinedInput-notchedOutline': {
+              borderColor: grey[500],
+            },
+          })
+        })
+      }
     },
     MuiSelect: {
-        styleOverrides: {
-            icon: ({ theme }) => ({
-                ...(theme.palette.mode === 'dark' && {
-                    color: theme.palette.text.secondary,
-                }),
-            }),
-        }
+      styleOverrides: {
+        icon: ({ theme }) => ({
+          ...(theme.palette.mode === 'dark' && {
+            color: theme.palette.text.secondary,
+          }),
+        }),
+      }
     },
     MuiChip: {
-        styleOverrides: {
-            root: {
-                fontWeight: 500,
-            }
+      styleOverrides: {
+        root: {
+          fontWeight: 500,
         }
+      }
     }
   }
 });

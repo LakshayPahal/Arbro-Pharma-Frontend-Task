@@ -12,15 +12,15 @@ https://arbro-task-lakshaypahal.netlify.app/
 ## 📸 Screenshots
 
 ### Dashboard View
-![Dashboard View](./screenshots/dashboard-view.png)
+<img src="./screenshots/dashboard-view.png" alt="Dashboard View" width="800" />
 
 ### Sample Management
-![Sample Form](./screenshots/sample-form.png)
-![Sample Table - Light Mode](./screenshots/sample-table.png)
-![Sample Table - Dark Mode](./screenshots/sample-table-dark.png)
+<img src="./screenshots/sample-form.png" alt="Sample Form" width="600" />
+<img src="./screenshots/sample-table.png" alt="Sample Table - Light Mode" width="800" />
+<img src="./screenshots/sample-table-dark.png" alt="Sample Table - Dark Mode" width="800" />
 
 ### Mobile Responsive View
-![Mobile View](./screenshots/mobile-view.jpg)
+<img src="./screenshots/mobile-view.jpg" alt="Mobile View" width="400" />
 
 ## ✨ Features
 

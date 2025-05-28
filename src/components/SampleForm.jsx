@@ -50,15 +50,19 @@ const SampleForm = ({
 
   const validate = () => {
     const newErrors = {};
+    
     if (!formData.sampleName || formData.sampleName.trim() === '') {
       newErrors.sampleName = 'Sample Name is required.';
     }
+    
     if (!formData.sampleType) {
       newErrors.sampleType = 'Sample Type is required.';
     }
+    
     if (!formData.status) {
       newErrors.status = 'Status is required.';
     }
+    
     if (!formData.collectedOn) {
       newErrors.collectedOn = 'Collected Date is required.';
     } else {
@@ -69,6 +73,7 @@ const SampleForm = ({
         newErrors.collectedOn = 'Collected Date cannot be in the future.';
       }
     }
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -143,8 +148,8 @@ const SampleForm = ({
         <Grid item xs={12}>
           {mode === 'edit' && formData.status && (
             <Box sx={{ mb: 1.5, display: 'flex', alignItems: 'center', gap: 1 }}>
-                <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight:'medium' }}>Current Status:</Typography>
-                <StatusBadge status={formData.status} />
+              <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight:'medium' }}>Current Status:</Typography>
+              <StatusBadge status={formData.status} />
             </Box>
           )}
           <FormControl fullWidth required error={!!errors.status} variant="outlined">

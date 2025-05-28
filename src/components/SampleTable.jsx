@@ -129,6 +129,7 @@ const SampleTable = ({
                 >
                   {columns.map((column) => {
                     const value = row[column.id];
+                    
                     if (column.id === 'status') {
                       return (
                         <TableCell
@@ -152,8 +153,8 @@ const SampleTable = ({
                               displayEmpty
                               inputProps={{ 'aria-label': 'Sample status' }}
                               MenuProps={{
-                                  container: document.body,
-                               }}
+                                container: document.body,
+                              }}
                             >
                               {updatableStatusOptions.map((statusOpt) => (
                                 <MenuItem key={statusOpt} value={statusOpt}>
@@ -165,6 +166,7 @@ const SampleTable = ({
                         </TableCell>
                       );
                     }
+                    
                     if (column.id === 'actions') {
                       return (
                         <TableCell
@@ -191,6 +193,7 @@ const SampleTable = ({
                         </TableCell>
                       );
                     }
+                    
                     return (
                       <TableCell
                         key={column.id}
