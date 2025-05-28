@@ -10,7 +10,17 @@ Here is the live Deployment link of the project:
 https://arbro-task-lakshaypahal.netlify.app/
 
 ## 📸 Screenshots
-[Add your screenshots here]
+
+### Dashboard View
+![Dashboard View](./screenshots/dashboard-view.png)
+
+### Sample Management
+![Sample Form](./screenshots/sample-form.png)
+![Sample Table - Light Mode](./screenshots/sample-table.png)
+![Sample Table - Dark Mode](./screenshots/sample-table-dark.png)
+
+### Mobile Responsive View
+![Mobile View](./screenshots/mobile-view.jpg)
 
 ## ✨ Features
 
